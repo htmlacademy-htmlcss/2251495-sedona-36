@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Maria Motovilova](https://up.htmlacademy.ru/htmlcss/36/user/2251495).
-* Наставник: `Неизвестно`.
+* Наставник: [Павел Нюкало](https://htmlacademy.ru/profile/nyukalopavel).
 
 ---
 
