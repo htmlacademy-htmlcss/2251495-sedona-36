@@ -1,0 +1,381 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/pt-sans-bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* Основные стили */
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  background-color: rgba(130, 179, 211, 1);
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 0;
+  border-radius: 4px;
+}
+
+/* Стили для header */
+
+.header-container {
+  display: flex;
+  margin: 0 auto;
+  width: 1060px;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 440px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation-user {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 300px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-left: auto;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+}
+
+.link-button {
+  background-color: rgba(117, 97, 87, 1);
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+}
+
+.favourites-number {
+  font-size: 10px;
+  line-height: 10px;
+  background-color:rgba(125, 181, 79, 1);
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 1);
+}
+
+/* Стили для footer */
+
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-contacts {
+  display: flex;
+  width: 1060px;
+}
+
+.footer-contacts-socials-list {
+  display: flex;
+  width: 182px;
+  margin-right: 197px;
+  list-style-type: none;
+}
+
+.footer-contacts-email {
+  margin-left: auto;
+}
+
+.subscription-button {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.footer-contacts-phone {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+/* Стили для главной страницы */
+
+/* hero */
+
+.hero {
+  background-image: url("../images/bord.svg"), url("../images/index-background.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom, center;
+  background-size: contain, cover;
+  background-color: rgba(125, 181, 79, 1);
+}
+
+.slogan {
+  display: block;
+  margin: 0 auto;
+}
+
+/* advantages */
+
+.tagline {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.tagline-small {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: rgba(51, 51, 51, 1);
+  text-align: center;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.description {
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+  text-align: center;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.advantages-item,
+.services-item {
+  background-color:rgba(131, 179, 211, 0.12);
+  width: 400px;
+}
+
+.advantages-item:first-child,
+.advantages-item:last-child {
+  width: 1200px;
+}
+
+.background-bright {
+  background-color: rgba(130, 179, 211, 1);
+  color:rgba(255, 255, 255, 1);
+}
+
+.background-bright .description {
+  color:rgba(255, 255, 255, 1);
+}
+
+.background-light {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.services-item:nth-child(2n) {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* search */
+
+.search-link {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+/* footer */
+
+.index-subscription {
+  background-image: url("../images/subscribe.jpg");
+  background-color: rgba(130, 179, 211, 1);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Стили для каталога */
+
+/* inner-filter */
+
+.breadcrumbs {
+  list-style-type: none;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.inner-page-filter {
+  background-image: url("../images/filter-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(130, 179, 211, 1);
+  color:rgba(255, 255, 255, 1);
+}
+
+.catalog-filter {
+  display: flex;
+}
+
+.catalog-filter-infrastructure {
+  margin-right: 70px;
+}
+
+.catalog-filter-group {
+  margin-right: auto;
+}
+
+.catalog-filter-price {
+  margin-right: 70px;
+}
+
+.reset-button {
+  background-color: transparent;
+}
+
+.fieldset {
+  border: 0;
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.catalog-filter-item {
+  line-height: 23px;
+}
+
+/* catalog-hotels */
+
+/* hotels-cards-list */
+
+.hotels-cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.hotel-card-link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+.raiting {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.button-active {
+  background-color:rgba(125, 181, 79, 1);
+}
+
+.pagination {
+  list-style-type: none;
+}
+
+.pagination-link {
+  background-color: rgba(130, 179, 211, 1);
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.pagination-current {
+  background-color: rgba(242, 242, 242, 1);
+  color: rgba(0, 0, 0, 1);
+}
+
+.pagination-link-ellipsis {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 1);
+}
