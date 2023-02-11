@@ -79,6 +79,7 @@ body {
 
 .navigation-logo {
   margin-bottom: -6px;
+  position: relative;
 }
 
 .navigation {
@@ -98,6 +99,7 @@ body {
 .navigation-user {
   max-width: 300px;
   margin-left: auto;
+  align-items: center;
 }
 
 .navigation-link {
@@ -120,7 +122,7 @@ body {
   background-color: rgba(117, 97, 87, 1);
   text-decoration: none;
   color: rgba(255, 255, 255, 1);
-  display: block;
+  display: inline-block;
   text-align: center;
   box-sizing: border-box;
 }
@@ -133,6 +135,10 @@ body {
   color: rgba(255, 255, 255, 1);
 }
 
+.link-button-header {
+  padding: 8px 34px;
+}
+
 /* Стили для footer */
 
 .page-footer {
@@ -142,14 +148,22 @@ body {
 
 .footer-contacts {
   display: flex;
-  width: 1060px;
+  padding: 45px 70px 35px;
+  justify-content: space-between;
 }
 
 .footer-contacts-socials-list {
   display: flex;
-  width: 182px;
-  margin-right: 197px;
+  flex-wrap: wrap;
+  width: 192px;
+  padding: 0;
+  margin: 0;
   list-style-type: none;
+  margin-right: 189px;
+}
+
+.footer-socials-item {
+  padding: 13px 12px;
 }
 
 .footer-contacts-email {
@@ -322,6 +336,22 @@ body {
   display: flex;
 }
 
+.field {
+  flex-grow: 1;
+  padding: 12px 20px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border: 0;
+}
+
+.subscription-button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 232px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
 /* Стили для каталога */
 
 /* inner-filter */
@@ -345,14 +375,32 @@ body {
   background-size: cover;
   background-color: rgba(130, 179, 211, 1);
   color: rgba(255, 255, 255, 1);
+  padding: 35px 70px 70px;
 }
 
 .catalog-filter {
   display: flex;
+  width: 1060px;
+}
+
+.catalog-filter-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.catalog-filter-item:not(:last-child)  {
+  margin-bottom: 16px;
+}
+
+.catalog-filter-title {
+  margin-bottom: 32px;
 }
 
 .catalog-filter-infrastructure {
-  margin-right: 70px;
+  padding: 0;
+  margin: 0;
+  width: 151px;
 }
 
 .catalog-filter-group {
@@ -363,8 +411,27 @@ body {
   margin-right: 70px;
 }
 
+.control-input {
+  padding: 12px 20px;
+  width: 143px;
+  display: inline;
+  box-sizing: border-box;
+}
+
+.buttons-filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.button-filter {
+  padding: 8px 50px;
+  margin-bottom: 32px;
+}
+
 .reset-button {
   background-color: transparent;
+  padding: 8px 50px;
 }
 
 .fieldset {
@@ -391,11 +458,62 @@ body {
 
 /* hotels-cards-list */
 
+.catalog-hotels-sort {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 41px;
+  align-items: baseline;
+}
+
+.select-control {
+  width: 292px;
+  padding: 14px 20px;
+  border: 1px solid rgba(229, 229, 229, 1);
+  border-radius: 4px;
+  font-size: inherit;
+  font-family: "PT Sans", sans-serif;
+}
+
+.links-view {
+  display: flex;
+}
+
+.link-view {
+  padding: 17px 16px;
+}
+
+.link-view:not(:last-child) {
+  margin-right: 8px;
+}
+
 .hotels-cards-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 1060px;
+  align-items: center;
+}
+
+.hotel-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid rgba(229, 229, 229, 1);
+  border-radius: 4px;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.hotel-card-title {
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .hotel-card-link {
@@ -406,11 +524,30 @@ body {
   text-decoration: none;
 }
 
+.button-card {
+  width: 140px;
+  padding: 8px;
+}
+
+.hotel-card-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.hotel-card-content p {
+  margin: 0;
+}
+
 .raiting {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   background-color: rgba(242, 242, 242, 1);
+  padding: 8px 23px;
+  border-radius: 4px;
 }
 
 .button-active {
@@ -419,13 +556,29 @@ body {
 
 .pagination {
   list-style-type: none;
+  display: flex;
+  width: 400px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  padding-left: 70px;
+  margin: 0;
 }
 
 .pagination-link {
+  display: block;
   background-color: rgba(130, 179, 211, 1);
+  text-align: center;
+  font-weight: 700;
   border-radius: 4px;
   color: rgba(255, 255, 255, 1);
   text-decoration: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 60px;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .pagination-current {
@@ -436,4 +589,8 @@ body {
 .pagination-link-ellipsis {
   background-color: transparent;
   color: rgba(0, 0, 0, 1);
+}
+
+.field-inner {
+  background-color: rgba(242, 242, 242, 1);
 }

@@ -122,12 +122,15 @@
                   <input class="control-input" placeholder="до" type="number" name="highest-price" value="9000">
                 </label>
               </fieldset>
-              <button class="button" type="submit">Применить</button>
+              <div class="buttons-filter">
+              <button class="button button-filter" type="submit">Применить</button>
               <button class="button reset-button" type="reset">Сбросить</button>
+            </div>
             </form>
           </section>
         </div>
         <section class="catalog-hotels">
+          <div class="catalog-hotels-sort">
           <h2 class="visually-hidden">Список гостиниц Седоны.</h2>
           <p class="tagline">
             Найдено гостиниц: <span class="tagline">38</span>
@@ -154,20 +157,23 @@
               </a>
             </li>
           </ul>
+        </div>
           <ul class="hotels-cards-list">
             <li class="hotel-card">
               <a class="hotel-card-link" href="#">
                 <img class="hotel-card-image" src="images/hotel-1.jpg" width="300" height="212" alt="">
                 <h3 class="hotel-card-title">Amara Resort & Spa</h3>
               </a>
+              <div class="hotel-card-content">
               <p class="hotel-card-type">Гостиница</p>
               <p class="hotel-card-price">От 4000 ₽</p>
-              <a class="button link-button" href="#">Подробнее</a>
-              <button class="button" type="button">В избранное</button>
+              <a class="button link-button button-card" href="#">Подробнее</a>
+              <button class="button button-card" type="button">В избранное</button>
               <p class="stars four-stars">
                 <span class="visually-hidden">Четыре звезды.</span>
               </p>
               <p class="raiting">Рейтинг: 8,5</p>
+            </div>
             </li>
             <li class="hotel-card">
               <a class="hotel-card-link" href="#">
@@ -247,7 +253,7 @@
             </p>
             <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
               <label for="subscription-email" class="visually-hidden">Email</label>
-              <input class="field" placeholder="Ваш Email" type="email" name="subscription-email"
+              <input class="field field-inner" placeholder="Ваш Email" type="email" name="subscription-email"
                 id="subscription-email" required>
               <button class="button subscription-button" type="submit">
                 Подписаться
