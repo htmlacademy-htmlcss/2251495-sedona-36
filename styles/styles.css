@@ -56,6 +56,7 @@ body {
 }
 
 .button {
+  display: inline-block;
   background-color: rgba(130, 179, 211, 1);
   font-family: inherit;
   font-size: 16px;
@@ -76,8 +77,13 @@ body {
   width: 1060px;
 }
 
+.navigation-logo {
+  margin-bottom: -6px;
+}
+
 .navigation {
   display: flex;
+  justify-content: space-between;
 }
 
 .navigation-list {
@@ -90,16 +96,13 @@ body {
 }
 
 .navigation-user {
-  display: flex;
-  flex-wrap: wrap;
   max-width: 300px;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
   margin-left: auto;
 }
 
 .navigation-link {
+  display: block;
+  padding: 20px 16px;
   font-size: 20px;
   line-height: 24px;
   color: rgba(0, 0, 0, 1);
@@ -108,10 +111,18 @@ body {
   text-align: center;
 }
 
+.navigation-user .navigation-link {
+  min-width: 20px;
+  min-height: 20px;
+}
+
 .link-button {
   background-color: rgba(117, 97, 87, 1);
   text-decoration: none;
   color: rgba(255, 255, 255, 1);
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .favourites-number {
@@ -168,6 +179,8 @@ body {
   background-position: bottom, center;
   background-size: contain, cover;
   background-color: rgba(125, 181, 79, 1);
+  padding-top: 52px;
+  padding-bottom: 83px;
 }
 
 .slogan {
@@ -177,12 +190,19 @@ body {
 
 /* advantages */
 
+.advantages-tagline {
+  padding-top: 69px;
+  padding-bottom: 90px;
+}
+
 .tagline {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .tagline-small {
@@ -191,6 +211,7 @@ body {
   line-height: 26px;
   color: rgba(51, 51, 51, 1);
   text-align: center;
+  margin-bottom: 54px;
 }
 
 .title {
@@ -227,16 +248,21 @@ body {
 .services-item {
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
+  padding: 102px 85px;
+  min-height: 385px;
+  box-sizing: border-box;
 }
 
 .advantage-image {
   display: flex;
   width: 1200px;
+  padding: 0;
 }
 
 .background-bright {
   background-color: rgba(130, 179, 211, 1);
   color: rgba(255, 255, 255, 1);
+  padding: 102px 85px;
 }
 
 .background-bright .description {
@@ -247,24 +273,53 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
+.services-tagline {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
 .services-item:nth-child(2n) {
   background-color: rgba(255, 255, 255, 1);
 }
 
 /* search */
 
+.search {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
 .search-link {
   font-size: 20px;
   line-height: 36px;
+  width: 376px;
+  margin: 0 auto;
+  padding: 8px 50px;
 }
 
 /* footer */
+
+.subscription {
+  padding-top: 96px;
+  padding-bottom: 104px;
+}
 
 .index-subscription {
   background-image: url("../images/subscribe.jpg");
   background-color: rgba(130, 179, 211, 1);
   background-repeat: no-repeat;
   background-size: cover;
+  color: rgba(255, 255, 255, 1);
+}
+
+.index-subscription .tagline-small {
+  color: rgba(255, 255, 255, 1);
+}
+
+.subscription-form {
+  width: 684px;
+  margin: 0 auto;
+  display: flex;
 }
 
 /* Стили для каталога */
