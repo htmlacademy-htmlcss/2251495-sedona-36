@@ -83,7 +83,7 @@ body {
 
 .navigation {
   display: flex;
-  width: 892px;
+  flex-grow: 1;
 }
 
 .navigation-list {
@@ -248,15 +248,7 @@ body {
   margin-bottom: 0;
 }
 
-.advantages-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.services-list {
+.advantages-list, .services-list {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -507,7 +499,7 @@ body {
   border: 1px solid rgba(229, 229, 229, 1);
   border-radius: 4px;
   font-size: inherit;
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
 }
 
 .links-view {
