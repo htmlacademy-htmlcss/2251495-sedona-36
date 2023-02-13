@@ -37,7 +37,7 @@ body {
   flex-direction: column;
   min-height: 100%;
   background-color: #FFFFFF;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .main-container {
@@ -229,7 +229,6 @@ body {
   line-height: 26px;
   color: rgba(51, 51, 51, 1);
   text-align: center;
-  margin: 0;
   width: 651px;
   margin: 0 auto;
 }
@@ -271,6 +270,10 @@ body {
   display: flex;
   width: 1200px;
   padding: 0;
+}
+
+.advantage-image-reverse {
+  flex-direction: row-reverse;
 }
 
 .background-bright {
@@ -531,7 +534,6 @@ body {
   padding: 0;
   margin: 0 auto;
   width: 1060px;
-  align-items: center;
 }
 
 .hotel-card {
