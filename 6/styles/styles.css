@@ -26,12 +26,8 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #F2F2F2;
   color: rgba(0, 0, 0, 1);
-}
-
-.main-container {
-  flex-grow: 1;
 }
 
 .page-container {
@@ -40,6 +36,12 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .visually-hidden {
@@ -227,7 +229,6 @@ body {
   line-height: 26px;
   color: rgba(51, 51, 51, 1);
   text-align: center;
-  margin: 0;
   width: 651px;
   margin: 0 auto;
 }
@@ -269,6 +270,10 @@ body {
   display: flex;
   width: 1200px;
   padding: 0;
+}
+
+.advantage-image-reverse {
+  flex-direction: row-reverse;
 }
 
 .background-bright {
@@ -346,6 +351,7 @@ body {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   border: 0;
+  background-color: #F2F2F2;
 }
 
 .subscription-button {
@@ -434,6 +440,7 @@ body {
   display: inline-block;
   box-sizing: border-box;
   border: 2px solid rgba(242, 242, 242, 1);
+  background-color: #F2F2F2;
 }
 
 .buttons-filter {
@@ -527,7 +534,6 @@ body {
   padding: 0;
   margin: 0 auto;
   width: 1060px;
-  align-items: center;
 }
 
 .hotel-card {
@@ -618,8 +624,4 @@ body {
 .pagination-link-ellipsis {
   background-color: transparent;
   color: rgba(0, 0, 0, 1);
-}
-
-.field-inner {
-  background-color: rgba(242, 242, 242, 1);
 }
