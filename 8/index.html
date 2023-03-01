@@ -136,20 +136,20 @@
           </div>
 
           <ul class="services-list">
-            <li class="services-item">
+            <li class="services-item services-item-accommodation">
               <h3 class="title">Жильё</h3>
               <p class="description">
                 Рекомендуем пожить <br> в настоящем мотеле, всё как в кино!
               </p>
             </li>
-            <li class="services-item">
+            <li class="services-item services-item-food">
               <h3 class="title">Еда</h3>
               <p class="description">
                 Всегда заказывайте <br> топовый фирменный бургер, вы не
                 разочаруетесь!
               </p>
             </li>
-            <li class="services-item">
+            <li class="services-item services-item-souvenirs">
               <h3 class="title">Сувениры</h3>
               <p class="description">
                 Не только китайского, <br> но и настоящего местного производства!
@@ -241,6 +241,45 @@
         </section>
       </footer>
     </div>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label for="search-date-check-in">Дата заезда:</label>
+              <input class="search-form-field field" type="date" id="search-date-check-in" name="search-date-check-in"
+                value="27 апреля 2020">
+            <p class="ivalid-data-text">Мы не можем отправить вас в прошлое.</p>
+            </p>
+            <p class="field-group">
+              <label for="search-date-check-out">Дата выезда:</label>
+              <input class="search-form-field field" type="date" id="search-date-check-out" name="search-date-check-out"
+                value="1 сентября 2023">
+            <p class="available-date-text">На эти даты есть свободные номера. Пока есть.</p>
+            </p>
+            <div class="field-group-wrapper">
+              <p class="field-group">
+                <label for="search-number-adults">Взрослые:</label>
+                <input class="search-form-field-number field" type="number" id="search-number-adults"
+                  name="search-number-adults">
+              </p>
+              <p class="field-group">
+                <label for="search-number-kids">Дети:</label>
+                <input class="search-form-field-number field" type="number" id="search-number-kids"
+                  name="search-number-kids">
+              </p>
+            </div>
+            <button type="button" class="button button-modal">Найти</button>
+          </form>
+        </section>
+
+      </div>
+    </div>
+
   </body>
 
 </html>
