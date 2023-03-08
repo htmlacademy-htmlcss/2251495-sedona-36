@@ -925,7 +925,7 @@ body {
   background-color: transparent;
 }
 
-.reset-button:focus-visible {
+.reset-button:focus {
   background-color: transparent;
   box-shadow: inset 0 0 0 3px #83b3d3;
 }
@@ -1268,8 +1268,8 @@ body {
   background-color: transparent;
 }
 
-.pagination-link-ellipsis:hover,
-.pagination-link-ellipsis:focus {
+.pagination-link-ellipsis:hover:not(.pagination-current),
+.pagination-link-ellipsis:focus:not(.pagination-current) {
   color: rgba(0, 0, 0, 0.3);
 
   background-color: transparent;
@@ -1378,30 +1378,30 @@ body {
 
 .modal-search-form {
   display: grid;
-  width: 577px;
-  grid-template-columns: max-content 1fr max-content 1fr;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 119px 111px auto 111px;
+  grid-template-rows: repeat(4, max-content);
   column-gap: 18px;
   row-gap: 23px;
+  align-items: baseline;
 }
 
 .modal-lable {
   position: relative;
-  grid-column: 1 / 2;
 
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
 }
 
-.modal-lable-kids {
-  grid-column: 3 / 4;
-  grid-row: 3 / 4;
+.modal-lable-number {
+  align-self: center;
+}
+
+.field-group {
+  grid-column: 2 / 5;
 }
 
 .search-form-field {
-  grid-column: 2 / 5;
-
   box-sizing: border-box;
   width: 440px;
   margin-bottom: 4px;
@@ -1421,22 +1421,17 @@ body {
 }
 
 .search-form-field:focus-visible {
-  outline: #83b3d3;
+  outline: 3px solid #83b3d3;
 }
 
 .search-form-field:focus:not(:placeholder-shown) {
   box-shadow: inset 0 0 0 2px #000000;
-  ;
-}
-
-.field-group {
-  position: relative;
 }
 
 .modal-comment {
   display: block;
   margin: 0;
-  margin-left: 157px;
+  margin-left: 20px;
 
   font-size: 16px;
 }
@@ -1449,6 +1444,7 @@ body {
   flex-grow: 0;
   display: inline-block;
   box-sizing: border-box;
+  width: 31px;
   height: 48px;
   padding: 14px 10px;
 
@@ -1512,11 +1508,11 @@ input[type=number]::-webkit-outer-spin-button {
   border-radius: 4px;
 }
 
-.modal-button:focus .modal-icon-minus {
+.modal-icon-minus {
   padding: 9px 3px;
 }
 
-.modal-button:focus .modal-icon-plus {
+.modal-icon-plus {
   padding: 3px;
 }
 
@@ -1546,6 +1542,16 @@ input[type=number]::-webkit-outer-spin-button {
   text-align: center;
 }
 
+.modal-wrapper-tooltip {
+  position: relative;
+
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+  align-self: center;
+
+  text-align: center;
+}
+
 .tooltip {
   position: absolute;
   left: 10px;
@@ -1568,6 +1574,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .tooltip-text {
   position: absolute;
+  top: 41px;
+  left: 50%;
+  transform: translateX(-50%);
+
   display: block;
   box-sizing: border-box;
   width: 256px;
@@ -1577,11 +1587,11 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: 400;
   line-height: 20px;
   color: #ffffff;
+  text-align: start;
 
   border-radius: 10px;
   background-color: #333333;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-  /* display: none; */
 }
 
 .tooltip-text:before {
@@ -1605,5 +1615,5 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .modal-container-close {
-  /* display: none; */
+  display: none;
 }

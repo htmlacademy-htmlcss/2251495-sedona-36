@@ -247,19 +247,19 @@
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="modal-lable" for="search-date-check-in">Дата заезда:</label>
+            <label class="modal-lable" for="search-date-check-in">Дата Заезда:</label>
             <div class="field-group">
               <input class="search-form-field field" type="text" id="search-date-check-in" name="search-date-check-in"
                 value="27 апреля 2020" placeholder="Укажите дату">
               <span class="modal-comment ivalid-data-text">Мы не можем отправить вас в прошлое.</span>
             </div>
-            <label class="modal-lable" for="search-date-check-out">Дата выезда:</label>
+            <label class="modal-lable" for="search-date-check-out">Дата Выезда:</label>
             <div class="field-group">
               <input class="search-form-field field" type="text" id="search-date-check-out" name="search-date-check-out"
                 value="1 сентября 2023" placeholder="Укажите дату">
               <span class="modal-comment available-date-text">На эти даты есть свободные номера. Пока есть.</span>
             </div>
-            <label class="modal-lable" for="search-number-adults">Взрослые:</label>
+            <label class="modal-lable modal-lable-number" for="search-number-adults">Взрослые:</label>
             <div class="modal-buttons-wrapper modal-buttons-wrapper-adults">
               <button type="button" class="button modal-button modal-minus-button">
                 <svg class="modal-icon modal-icon-minus" xmlns="http://www.w3.org/2000/svg" width="14" height="2"
@@ -276,14 +276,16 @@
                 </svg>
               </button>
             </div>
-            <label class="modal-lable modal-lable-kids" for="search-number-kids">Дети:</label>
-            <span class="modal-lable">
-              <span class="tooltip">
-                <button class="button tooltip-button" type="button"></button>
-                <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
-                  лет. Дети до 6 лет размещаются бесплатно.</span>
+            <div class="modal-wrapper-tooltip">
+              <label class="modal-lable modal-lable-number" for="search-number-kids">Дети:</label>
+              <span class="modal-lable">
+                <span class="tooltip">
+                  <button class="button tooltip-button" type="button"></button>
+                  <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
+                    лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
               </span>
-            </span>
+            </div>
             <div class="modal-buttons-wrapper modal-buttons-wrapper-kids">
               <button type="button" class="button modal-button modal-minus-button">
                 <svg class="modal-icon modal-icon-minus" xmlns="http://www.w3.org/2000/svg" width="14" height="2"
