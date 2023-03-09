@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
 
   <body>
@@ -72,7 +74,7 @@
           <div class="advantages-tagline">
             <h2 class="visually-hidden">Преимущества.</h2>
             <p class="tagline tagline-lead">
-              Седона — небольшой городок в Аризоне, <br>
+              Седона — небольшой городок в Аризоне,
               заслуживающий большего!
             </p>
             <p class="tagline-small">
@@ -137,13 +139,13 @@
             <li class="services-item services-item-accommodation">
               <h3 class="title">Жильё</h3>
               <p class="description">
-                Рекомендуем пожить <br> в настоящем мотеле, всё как в кино!
+                Рекомендуем пожить в&nbsp;настоящем мотеле, всё как&nbsp;в кино!
               </p>
             </li>
             <li class="services-item services-item-food">
               <h3 class="title">Еда</h3>
               <p class="description">
-                Всегда заказывайте <br> топовый фирменный бургер, вы не
+                Всегда заказывайте топовый&nbsp;фирменный бургер, вы не
                 разочаруетесь!
               </p>
             </li>
@@ -180,7 +182,7 @@
           </p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="subscription-email" class="visually-hidden">Email.</label>
-            <input class="field email-field" placeholder="Ваш Email" type="email" name="subscription-email"
+            <input class="field email-field" placeholder="Ваш e-mail" type="email" name="subscription-email"
               id="subscription-email" required>
             <button class="button subscription-button" type="submit">
               Подписаться
@@ -242,7 +244,7 @@
     <div class="modal-container modal-container-close">
       <div class="modal modal-search">
         <button type="button" class="modal-close-button">
-          <span class="visually-hidden">Закрыть</span>
+          <span class="visually-hidden">Закрыть.</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
@@ -280,8 +282,9 @@
               <label class="modal-lable modal-lable-number" for="search-number-kids">Дети:</label>
               <span class="modal-lable">
                 <span class="tooltip">
-                  <button class="button tooltip-button" type="button"></button>
-                  <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
+                  <button class="button tooltip-button" type="button" aria-labelledby="tooltip-label-kids"></button>
+                  <span class="tooltip-text tooltip-text-close" role="tooltip" id="tooltip-label-kids">Укажите количество детей, которые
+                    будут с вами, возраст которых от 6 до 18
                     лет. Дети до 6 лет размещаются бесплатно.</span>
                 </span>
               </span>
