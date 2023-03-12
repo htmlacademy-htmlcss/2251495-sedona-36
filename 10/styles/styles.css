@@ -781,16 +781,12 @@ img {
   padding-left: 36px;
 }
 
-.control:hover {
+.control:hover span {
   opacity: 0.6;
 }
 
-.control:active {
+.control:active span {
   opacity: 0.3;
-}
-
-.control:hover:has(.control-input:disabled) {
-  opacity: 1;
 }
 
 .control-mark {
@@ -809,8 +805,8 @@ img {
   outline: 3px solid #83b3d3;
 }
 
-.control-input:disabled + .control-mark {
-  background-color: rgba(255, 255, 255, 0.4);
+.control-input:disabled ~ span {
+  opacity: 0.4;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark {
