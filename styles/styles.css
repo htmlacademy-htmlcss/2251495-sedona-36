@@ -123,7 +123,7 @@ img {
 
 .navigation-logo:hover,
 .navigation-logo:focus {
-  opacity: 70%;
+  opacity: 0.7;
 }
 
 .navigation-logo:focus {
@@ -131,7 +131,7 @@ img {
 }
 
 .navigation-logo:active {
-  opacity: 40%;
+  opacity: 0.4;
 }
 
 .navigation {
@@ -782,16 +782,15 @@ img {
 }
 
 .control:hover {
-  opacity: 60%;
+  opacity: 0.6;
 }
 
 .control:active {
-  opacity: 30%;
+  opacity: 0.3;
 }
 
-.control-input:disabled + .control-mark,
-.control-input:disabled:hover + .control-mark {
-  background-color: rgba(255, 255, 255, 0.4);
+.control:hover:has(.control-input:disabled) {
+  opacity: 1;
 }
 
 .control-mark {
@@ -808,6 +807,10 @@ img {
 
 .control:focus-within .control-mark {
   outline: 3px solid #83b3d3;
+}
+
+.control-input:disabled + .control-mark {
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .control-input[type="checkbox"]:checked + .control-mark {
@@ -1163,7 +1166,7 @@ img {
 
 .hotel-card-link:hover,
 .hotel-card-link:focus {
-  opacity: 60%;
+  opacity: 0.6;
 }
 
 .hotel-card-link:focus {
@@ -1171,7 +1174,7 @@ img {
 }
 
 .hotel-card-link:active {
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .button-card {
@@ -1259,6 +1262,7 @@ img {
 .pagination {
   display: flex;
   flex-wrap: wrap;
+  gap: 8px;
   min-width: 400px;
   max-width: 1060px;
   margin: 0;
@@ -1271,7 +1275,6 @@ img {
 .pagination-link {
   display: block;
   min-width: 52px;
-  margin-bottom: 8px;
   padding: 20px 4px;
 
   font-weight: 700;
@@ -1296,10 +1299,6 @@ img {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #82b3d3;
-}
-
-.pagination-item:not(:last-child) {
-  margin-right: 8px;
 }
 
 .pagination-current {
@@ -1384,7 +1383,7 @@ img {
 }
 
 .modal-close-button:active .modal-cross-icon {
-  fill-opacity: 30%;
+  fill-opacity: 0.3;
 }
 
 .modal-close-button:active::before,
@@ -1529,7 +1528,7 @@ img {
 
 .modal-icon {
   fill: #756157;
-  fill-opacity: 30%;
+  fill-opacity: 0.3;
 }
 
 .modal-button:hover .modal-icon,
@@ -1553,7 +1552,7 @@ img {
 
 .modal-button:active .modal-icon {
   fill: #000000;
-  fill-opacity: 30%;
+  fill-opacity: 0.3;
 }
 
 .modal-minus-button {
